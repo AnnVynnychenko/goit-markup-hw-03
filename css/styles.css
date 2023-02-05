@@ -64,7 +64,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 
-  outline: 2px solid chartreuse;
+  /* outline: 2px solid chartreuse; */
 }
 
 .btn {
@@ -291,7 +291,7 @@ body {
   padding: 12px var(--common-gap);
 
   color: var(--primary-brand-color);
-  background-color: var(--accent-color);
+  background-color: var(--light-color);
 
   border: 1px solid var(--accent-color);
   border-radius: var(--border-radius);
@@ -301,12 +301,14 @@ body {
 .filter-btn:focus {
   color: var(--white-color);
   background-color: var(--active-color);
+  border: 1px solid var(--active-color);
 }
 
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
   column-gap: var(--common-gap);
+  row-gap: 48px;
 }
 
 .portfolio-item {
@@ -315,6 +317,9 @@ body {
 
 .portfolio-text {
   padding: 32px 54px 32px 16px;
+  border-left: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
 }
 
 .hidden-text {
